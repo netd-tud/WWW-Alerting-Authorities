@@ -148,7 +148,7 @@ body[data-active-page="about"] #about {
     width: 100px;
     height: 100px;
     background-size: cover;
-    border: solid black 5pt;
+    /* border: solid black 5pt; */
     margin-right: 5pt;
 }
 
