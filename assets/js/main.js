@@ -211,6 +211,8 @@ function init() {
             });
     } else if (path == '/about') {
         getEl('body').dataset.activePage = 'about';
+    } else if (path == '/paper') {
+        getEl('body').dataset.activePage = 'paper';
     } else if (path !== '/') {
         history.replaceState({}, '', '/');
     }

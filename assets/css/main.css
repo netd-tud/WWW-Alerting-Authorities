@@ -88,7 +88,7 @@ a {
     opacity: 1;
 }
 
-#about, #home, #reports {
+#paper, #about, #home, #reports {
     display: none;
 }
 
@@ -101,6 +101,10 @@ body[data-active-page="reports"] #reports {
 }
 
 body[data-active-page="about"] #about {
+    display: block !important;
+}
+
+body[data-active-page="paper"] #paper {
     display: block !important;
 }
 
