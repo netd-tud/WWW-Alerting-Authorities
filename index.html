@@ -22,8 +22,8 @@
                     <h1 class="logo display-6 float-md-start mb-0">SecNow!</h1>
                     <nav class="nav nav-masthead justify-content-center float-md-end">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        <a class="nav-link" href="/reports">Reports</a>
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/reports">Alerting Authority Browser</a>
+                        <a class="nav-link" href="/about">Contact</a>
                     </nav>
                 </div>
             </header>
@@ -50,13 +50,12 @@
                                     <p class="text-center">
                                         <strong class="fs-2">
                                             We analyzed Alerting Authorities in the US and published the <u
-                                                class="primary">summary reports here*</u>.
+                                                class="primary">summary reports here</u>.
                                         </strong>
                                     </p>
                                     <hr>
                                 </a>
                             </div>
-                            <p>* You can also download the raw data and our toolchain <a href="https://zenodo.org/record/4300947">on zenodo</a>.</p>
                         </div>
                         <div class="col-sm-12">
                             <img src="/assets/img/main.png" class="w-100">
@@ -73,9 +72,9 @@
                         <div class="box-title">Summary</div>
                         <form>
                             <div class="mb-3">
-                                <label for="hostnames" class="form-label">Select your website</label>
+                                <label for="hostnames" class="form-label">Alerting Authority</label>
                                 <select id="hostnames" class="form-select" disabled>
-                                    <option>--</option>
+                                    <option>Select</option>
                                 </select>
                             </div>
                         </form>
@@ -108,6 +107,7 @@
                                 <div class="verdict-body"></div> -->
                         </div>
                     </div>
+                    <p><br/>* You can also download the raw data and our toolchain <a href="https://zenodo.org/record/4300947">on zenodo</a>.</p>
                 </div>
                 <div id="details" class="col-sm-12 mt-5 show-help">
                     <div class="box h-100">
@@ -115,8 +115,7 @@
                         <div class="help d-flex align-items-center h-100 w-100 text-muted">
                             <div class="text-center text-uppercase w-100 fs-4"><i
                                     class="d-none d-md-block fas fa-arrow-circle-left me-2"></i><i
-                                    class="d-block d-md-none fas fa-arrow-circle-up me-2"></i>Select your website
-                                first&hellip;</div>
+                                    class="d-block d-md-none fas fa-arrow-circle-up me-2"></i>Select an Alerting Authority&hellip;</div>
                         </div>
                         <div id="assurance-id" class="card mb-2">
                             <div class="card-header">
@@ -201,56 +200,52 @@
         <div id="about">
             <main class="row row-cols-sm-1 px-3 mb-3 mt-5">
                 <div class="box h-100 w-100">
-                    <div class="box-title">About</div>
+                    <div class="box-title">Contact</div>
                     <div class="row row-cols-lg-1 row-cols-xl-2 px-3 mb-3 align-items-stretch">
                         <div class="col-sm-12">
                             <p class="fs-3 text-justify">
-                                This project is the result of an interdisciplinary cooperation of <a href="https://www.weizenbaum-institut.de/en/">Weizenbaum-Institut for the Networked Society</a>, <a href="https://www.fokus.fraunhofer.de/en">Fraunhofer FOKUS</a>, <a href="https://www.fu-berlin.de/en/index.html">Free University of Berlin</a>, <a href="https://www.haw-hamburg.de/en/">Hamburg University of Applied Sciences</a>, and <a href="https://www2.gmu.edu/">George Mason University</a>.
+                                This project is the result of an interdisciplinary cooperation of <a href="https://www.weizenbaum-institut.de/en/">Weizenbaum-Institut for the Networked Society</a>, <a href="https://www.fokus.fraunhofer.de/en">Fraunhofer FOKUS</a>, <a href="https://www.fu-berlin.de/en/index.html">Freie Universit&auml;t Berlin</a>, <a href="https://www.haw-hamburg.de/en/">Hamburg University of Applied Sciences</a>, and <a href="https://www2.gmu.edu/">George Mason University</a>.
                             </p>
+                            <br/>
+                            <p class="fs-4 text-justify">In case of questions, please, contact <a href="https://www.weizenbaum-institut.de/en/portrait/p/pouyan-fotouhi-tehrani/">Pouyan Fotouhi Tehrani</a>.</p>
                         </div>
                         <div class="col-sm-12">
                             <ul class="list-group">
                                 <li class="list-group-item head">
                                     <div class="head-img pft rounded-circle float-start"></div>
-                                    <p class="mt-4"><u>Pouyan Fotouhi Tehrani</u>
-                                        PhD-Candidate at <em><a
-                                                href="https://www.weizenbaum-institut.de/en/portrait/p/pouyan-fotouhi-tehrani/">The
-                                                Weizenbaum Institute for the Networked Society</a>.</em>
+                                    <p class="mt-4"><a href="https://www.weizenbaum-institut.de/en/portrait/p/pouyan-fotouhi-tehrani/">Pouyan Fotouhi Tehrani</a>
+                                        PhD-Candidate at <em>The
+                                                Weizenbaum Institute for the Networked Society.</em>
                                     </p>
                                 </li>
                                 <li class="list-group-item head">
                                     <div class="head-img eo rounded-circle float-start"></div>
                                     <p class="mt-4">
-                                        <u>Eric Osterweil</u>
-                                        Assistant Professor, Department of Computer Science at <em><a
-                                                href="https://cs.gmu.edu/~eoster/index.html">George Mason
-                                                University</a>.</em>
+                                        <a href="https://cs.gmu.edu/~eoster/index.html">Eric Osterweil</a>
+                                        Assistant Professor, Department of Computer Science at <em>George Mason
+                                                University.</em>
                                     </p>
                                 </li>
                                 <li class="list-group-item head">
                                     <div class="head-img js rounded-circle float-start"></div>
                                     <p class="mt-4">
-                                        <u>Jochen Schiller</u>
-                                        Professor, Department of Computer Science at <em><a
-                                                href="https://www.mi.fu-berlin.de/inf/groups/ag-tech/staff/0Current/schiller.html">Free
-                                                University of a Berlin</a>.</em>
+                                        <a href="https://www.mi.fu-berlin.de/inf/groups/ag-tech/staff/0Current/schiller.html">Jochen Schiller</a>
+                                        Professor, Instiute of Computer Science at <em>Freie Universit&auml;t Berlin.</em>
                                     </p>
                                 </li>
                                 <li class="list-group-item head">
                                     <div class="head-img tcs rounded-circle float-start"></div>
                                     <p class="mt-4">
-                                        <u>Thomas C. Schmidt</u>
-                                        Professor, Department of Informatik at <em><a
-                                                href="https://users.informatik.haw-hamburg.de/~schmidt/">Hamburg
-                                                University of Applied Sciences</a>.</em>
+                                        <a href="https://users.informatik.haw-hamburg.de/~schmidt/">Thomas C. Schmidt</a>
+                                        Professor, Department of Informatik at <em>Hamburg
+                                                University of Applied Sciences.</em>
                                     </p>
                                 </li>
                                 <li class="list-group-item head">
                                     <div class="head-img mw rounded-circle float-start"></div>
                                     <p class="mt-4">
-                                        <u>Matthias Wählisch</u>
-                                        Professor, Department of Informatik at <em><a
-                                                href="https://www.mi.fu-berlin.de/en/inf/groups/ilab/members/waehlisch.html">Free University of Berlin</a>.</em>
+                                        <u><a href="https://www.mi.fu-berlin.de/en/inf/groups/ilab/members/waehlisch.html">Matthias W&auml;hlisch</a></u>
+                                        Professor, Institute of Computer Science at <em>Freie Universit&auml;t Berlin.</em>
                                     </p>
                                 </li>
                             </ul>
