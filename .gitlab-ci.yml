@@ -3,7 +3,7 @@ image: busybox
 pages:
   stage: deploy
   script:
-    - echo 'See: https://gitlab.com/pages/plain-html'
+    - echo "see https://gitlab.com/pages/plain-html"
   artifacts:
     paths:
     - public
