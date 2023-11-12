@@ -168,7 +168,8 @@ function itemSelected(e) {
     setCardStyle('#assurance-res', genResSpec(dataset));
     setCardStyle('#assurance-trans', genTransSpec(dataset));
 
-    history.replaceState({}, '', `/reports/${dataset.id}`);
+    // history.replaceState({}, '', `/reports/${dataset.id}`);
+    window.location.hash = `#reports/${dataset.id}`
 
     getEl('#summary form select#hostnames option:first-child').remove();
     getEl('#details').classList.remove('show-help');
@@ -176,13 +177,13 @@ function itemSelected(e) {
 }
 
 function init() {
-    const path = window.location.pathname;
+    const hash = window.location.hash;
 
-    if (path.startsWith('/reports')) {
+    if (hash.startsWith('#reports')) {
         getEl('body').dataset.activePage = 'reports';
 
         let select = getEl('select#hostnames')
-        fetch('/assets/static/all-data.json')
+        fetch('assets/static/all-data.json')
             .then(res => res.json())
             .then(function (data) {
                 data.sort((a, b) => `${a.state}-${a.name}`.localeCompare(`${b.state}-${b.name}`))
@@ -199,7 +200,7 @@ function init() {
                 select.disabled = false;
                 select.onchange = itemSelected;
 
-                let match = /\/reports\/(\d+)/g.exec(path)
+                let match = /#reports\/(\d+)/g.exec(hash)
                 if (match !== null) {
                     select.value = match[1];
                     select.dispatchEvent(new Event('change'));
@@ -209,14 +210,11 @@ function init() {
                 // TODO implement this
                 console.error(err)
             });
-    } else if (path == '/about') {
+    } else if (hash == '#about') {
         getEl('body').dataset.activePage = 'about';
-    } else if (path == '/paper') {
+    } else if (hash == '#paper') {
         getEl('body').dataset.activePage = 'paper';
-    } else if (path !== '/') {
-        history.replaceState({}, '', '/');
     }
-
 }
 
 document.onreadystatechange = function () {
@@ -224,6 +222,7 @@ document.onreadystatechange = function () {
         case "loading":
             break;
         case "interactive":
+            window.addEventListener("hashchange", init)
             init();
             break;
         case "complete":
