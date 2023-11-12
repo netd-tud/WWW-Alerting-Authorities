@@ -10,11 +10,14 @@ import urllib.parse
 import http.server
 import socketserver
 import re
+import os
 from pathlib import Path
+
+# Serve from public directory
+os.chdir(os.path.join(os.getcwd(), 'public'))
 
 HOST = ('0.0.0.0', 8000)
 pattern = re.compile('.png|.jpg|.jpeg|.js|.css|.ico|.gif|.svg|.json', re.IGNORECASE)
-
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
