@@ -158,21 +158,21 @@ body[data-active-page="paper"] #paper {
 
 
 .head-img.pft {
-    background-image: url('/assets/img/heads/pft.jpg');
+    background-image: url('assets/img/heads/pft.jpg');
 }
 
 .head-img.eo {
-    background-image: url('/assets/img/heads/eo.jpg');
+    background-image: url('assets/img/heads/eo.jpg');
 }
 
 .head-img.js {
-    background-image: url('/assets/img/heads/js.jpg');
+    background-image: url('assets/img/heads/js.jpg');
 }
 
 .head-img.tcs {
-    background-image: url('/assets/img/heads/tcs.jpeg');
+    background-image: url('assets/img/heads/tcs.jpeg');
 }
 
 .head-img.mw {
-    background-image: url('/assets/img/heads/mw.jpg');
+    background-image: url('assets/img/heads/mw.jpg');
 }
